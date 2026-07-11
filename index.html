@@ -444,8 +444,8 @@
             document.getElementById('modal-price').innerText = currentUnit.tag;
             document.getElementById('modal-specs').innerHTML = renderSpecs({bed: currentUnit.bed, bath: currentUnit.bath, floor: currentUnit.floor});
             
-            const waMsg = `Halo Jensen, saya tertarik dengan unit ${currentUnit.name}.`;
-            document.getElementById('wa-tanya-jensen').href = `https://wa.me/6281399989916?text=${encodeURIComponent(waMsg)}`;
+            const waMsg = `Halo Jansen, saya tertarik dengan unit ${currentUnit.name}.`;
+            document.getElementById('wa-tanya-jansen').href = `https://wa.me/6281399989916?text=${encodeURIComponent(waMsg)}`;
             
             document.getElementById('detail-modal').classList.remove('hidden');
             document.body.style.overflow = 'hidden'; // Lock background scroll
@@ -515,9 +515,9 @@
             const tenor = document.getElementById('kpr-tenor').value;
             const hasil = document.getElementById('kpr-result').innerText;
             
-            let message = "Halo Jensen, saya tertarik konsultasi KPR untuk unit di Park Serpong.";
+            let message = "Halo Jansen, saya tertarik konsultasi KPR untuk unit di Park Serpong.";
             if (harga && dp && tenor && hasil) {
-                message = `Halo Jensen, saya ingin berkonsultasi mengenai KPR dengan rincian berikut:\n` +
+                message = `Halo Jansen, saya ingin berkonsultasi mengenai KPR dengan rincian berikut:\n` +
                           `- Harga Properti: Rp ${harga}\n` +
                           `- DP: ${dp}%\n` +
                           `- Tenor: ${tenor} Tahun\n` +
