@@ -284,42 +284,25 @@ Building trust through honesty, transparency, and dedicated service. </p>
         typeEffect();
 
         // Standardized Specs display formatter - Menggunakan ikon outline SVG modern berwarna emas
-       /* STREAMING_CHUNK:Updating renderSpecs with icons matching user reference... */
-function renderSpecs(specs) {
-    return `
-        <div class="text-center">
-            <div class="flex justify-center items-center h-8">
-                <!-- Icon Kasur Minimalis -->
-                <svg class="w-5 h-5 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M1 18V6a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v12M1 18h22M1 18v3M23 18v3" />
-                </svg>
-            </div>
-            <div class="text-[9px] text-slate-400 font-bold uppercase mt-1">Kamar</div>
-            <div class="text-sm font-bold text-wood-950">${specs.bed}</div>
-        </div>
-        <div class="text-center">
-            <div class="flex justify-center items-center h-8">
-                <!-- Icon Kamar Mandi Minimalis -->
-                <svg class="w-5 h-5 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2v4m0 0l-3-3m3 3l3-3m-3 3v8m0 0l-3-3m3 3l3-3" />
-                </svg>
-            </div>
-            <div class="text-[9px] text-slate-400 font-bold uppercase mt-1">Mandi</div>
-            <div class="text-sm font-bold text-wood-950">${specs.bath}</div>
-        </div>
-        <div class="text-center">
-            <div class="flex justify-center items-center h-8">
-                <!-- Icon Tangga Minimalis -->
-                <svg class="w-5 h-5 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 18H2M22 12H6M22 6H10" />
-                    <path d="M2 18L10 6" />
-                </svg>
-            </div>
-            <div class="text-[9px] text-slate-400 font-bold uppercase mt-1">Lantai</div>
-            <div class="text-sm font-bold text-wood-950">${specs.floor}</div>
-        </div>
-    `;
-}
+        function renderSpecs(specs) {
+            return `
+                <div class="text-center">
+                    <div class="text-gold-500 text-lg">🛏️</div>
+                    <div class="text-[9px] text-slate-400 font-bold uppercase mt-1">Kamar Tidur</div>
+                    <div class="text-sm font-bold text-wood-950">${specs.bed}</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-gold-500 text-lg">🛁</div>
+                    <div class="text-[9px] text-slate-400 font-bold uppercase mt-1">Kamar Mandi</div>
+                    <div class="text-sm font-bold text-wood-950">${specs.bath}</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-gold-500 text-lg">🏠</div>
+                    <div class="text-[9px] text-slate-400 font-bold uppercase mt-1">Lantai</div>
+                    <div class="text-sm font-bold text-wood-950">${specs.floor}</div>
+                </div>
+            `;
+        }
 
         // Fungsi rendering dengan fitur Pencarian Global Lintas Fase
         function renderCatalog(filter = "", phase = "7") {
